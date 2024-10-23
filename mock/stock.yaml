@@ -1,0 +1,56 @@
+openapi: 3.0.0
+info:
+    title: there
+    version: 1.0.0
+    description: Stock pricing
+    contact:
+      email: juananestival@gmail.com
+      name: Juanan Estival
+servers:
+  - url: https://www.alphavantage.co
+paths:
+    /query:
+        get:
+            description: Get stock quote
+            parameters:
+                - name: function
+                  in: query
+                  description: Set up as  GLOBAL_QUOTE in demo
+                  schema:
+                    type: string
+                    default: GLOBAL_QUOTE
+                    enum:
+                    - GLOBAL_QUOTE
+                - name: apikey
+                  in: query
+                  description: Must have an api key
+                  schema:
+                    type: string
+                    default: LUKD8V27A2ZNPQAB
+
+                - name: symbol
+                  in: query
+                  description: Stock ticker
+                  schema:
+                    type: string
+                    default: googl
+
+            responses:
+              "200":
+                description: 200 response
+                content:
+                    application/json:
+                        schema:
+                          $ref: "#/components/schemas/stock"
+
+
+
+components:
+    schemas:
+        stock:
+            type: object
+            properties:
+                Global Quote:
+                    type: object
+
+

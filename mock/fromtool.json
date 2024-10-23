@@ -1,0 +1,105 @@
+{
+  "results": [
+      {
+          "response": {
+              "result": {
+                  "geocode": {
+                      "bounds": {
+                          "high": {
+                              "latitude": 40.4097012,
+                              "longitude": -3.7237074
+                          },
+                          "low": {
+                              "longitude": -3.7237074,
+                              "latitude": 40.4097012
+                          }
+                      },
+                      "plusCode": {
+                          "globalCode": "8CGRC75G+VG"
+                      },
+                      "placeId": "ChIJnQx7feAnQg0RphK1XWajJiI",
+                      "location": {
+                          "latitude": 40.4097012,
+                          "longitude": -3.7237074
+                      },
+                      "placeTypes": [
+                          "street_address"
+                      ]
+                  },
+                  "verdict": {
+                      "validationGranularity": "PREMISE",
+                      "hasInferredComponents": true,
+                      "geocodeGranularity": "PREMISE",
+                      "inputGranularity": "PREMISE",
+                      "addressComplete": true
+                  },
+                  "address": {
+                      "addressComponents": [
+                          {
+                              "componentType": "route",
+                              "confirmationLevel": "CONFIRMED",
+                              "componentName": {
+                                  "languageCode": "es",
+                                  "text": "Paseo de la Ermita del Santo"
+                              }
+                          },
+                          {
+                              "componentName": {
+                                  "text": "30"
+                              },
+                              "componentType": "street_number",
+                              "confirmationLevel": "CONFIRMED"
+                          },
+                          {
+                              "componentType": "locality",
+                              "confirmationLevel": "CONFIRMED",
+                              "componentName": {
+                                  "languageCode": "es",
+                                  "text": "Madrid"
+                              }
+                          },
+                          {
+                              "componentName": {
+                                  "text": "España",
+                                  "languageCode": "es"
+                              },
+                              "componentType": "country",
+                              "confirmationLevel": "CONFIRMED"
+                          },
+                          {
+                              "inferred": true,
+                              "componentType": "administrative_area_level_2",
+                              "componentName": {
+                                  "text": "Madrid",
+                                  "languageCode": "es"
+                              },
+                              "confirmationLevel": "CONFIRMED"
+                          },
+                          {
+                              "componentName": {
+                                  "text": "28011"
+                              },
+                              "inferred": true,
+                              "componentType": "postal_code",
+                              "confirmationLevel": "CONFIRMED"
+                          }
+                      ],
+                      "postalAddress": {
+                          "languageCode": "es",
+                          "addressLines": [
+                              "P.º de la Ermita del Santo, 30"
+                          ],
+                          "locality": "Madrid",
+                          "administrativeArea": "Madrid",
+                          "postalCode": "28011",
+                          "regionCode": "ES"
+                      },
+                      "formattedAddress": "Paseo de la Ermita del Santo, 30, 28011 Madrid, España"
+                  }
+              },
+              "responseId": "78cf8377-54c2-40fd-ad92-5b4976e05e47"
+          },
+          "status": 200
+      }
+  ]
+}
